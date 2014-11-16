@@ -1,0 +1,48 @@
+### Multics Web Manager v.1.0
+
+tester sur
+
+Ubuntu 11.10 Server
+
+Requis :
+
+apache2
+php5
+phpmyadmin
+php-cli
+rar
+zip
+mysql-server
+mc
+
+software a installer
+
+apt-get install apache2 php5 php-cli phpmyadmin rar zip mc mysql-server
+
+
+
+Installasion multics web manager :
+
+1. Copier le dossier multics-cms-new dans /var/www
+2. Cree une database "multics" avec phpmyadmin.
+3. Importer multics.sql.
+4. Modifier config.inc.php avec les parametres de la database.
+5. Modifier le fichier "variable" dans le repertoire script pour utiliser l'emu.
+6. modifier les permissions dans un terminal;
+
+chmod -R 755 /var/www/multissql
+chmod -R 777 /usr/local/etc
+chmod -R 777 /usr/local/bin
+chmod -R 777 /var/etc
+chown -R $user:$group /var/www/multissql
+chown -R $user:$group /usr/local/etc/
+chown -R $user:$group /usr/local/bin/
+chown -R $user:$group /var/etc/
+
+
+7. Conecter vous avec votre ip ( http://www.you.ip/multicssql/ )
+    Default Administrator Login :
+	Username : admin
+	Password : admin
+    
+
